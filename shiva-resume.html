@@ -5,19 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bammidi Shiva Kumar - Resume</title>
     <style>
-        body {
+        body, html {
             margin: 0;
             padding: 0;
             height: 100vh;
-            display: flex;
-            flex-direction: column;
+            overflow: hidden;
         }
-        .resume-container {
-            flex: 1;
+        .pdf-container {
             width: 100%;
-            height: 100%;
+            height: 100vh;
+            overflow: hidden;
         }
-        .resume-frame {
+        #pdf-viewer {
             width: 100%;
             height: 100%;
             border: none;
@@ -25,8 +24,29 @@
     </style>
 </head>
 <body>
-    <div class="resume-container">
-        <iframe src="assets/doc/Shiva.pdf" class="resume-frame" title="Resume"></iframe>
+    <div class="pdf-container">
+        <object id="pdf-viewer" 
+                data="assets/doc/Shiva.pdf" 
+                type="application/pdf">
+            <p>It appears you don't have a PDF plugin for this browser. 
+               No worries! You can <a href="assets/doc/Shiva.pdf">click here to download the PDF file.</a>
+            </p>
+        </object>
     </div>
+
+    <!-- Fallback script for browsers that don't support PDF embedding -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var ua = navigator.userAgent.toLowerCase();
+            var isMobile = /iphone|ipad|ipod|android/.test(ua);
+            
+            if (isMobile) {
+                // For mobile devices, use Google Docs Viewer
+                var pdfViewer = document.getElementById('pdf-viewer');
+                var pdfUrl = encodeURIComponent(window.location.origin + '/assets/doc/Shiva.pdf');
+                pdfViewer.data = 'https://docs.google.com/viewer?url=' + pdfUrl + '&embedded=true';
+            }
+        });
+    </script>
 </body>
 </html> 
