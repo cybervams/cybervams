@@ -71,6 +71,17 @@
           <p>Explore a curated collection of resources, tools, and templates designed to help you achieve more. Whether it's project files, helpful guides, or creative assets, everything you need is just a click away!</p>
         </div>
          
+        <!-- Add this after the section title, before the row of cards -->
+        <!-- <div class="row mb-4">
+          <div class="col-lg-8 mx-auto">
+            <div class="search-box">
+              <input type="text" id="searchDownloads" class="form-control" placeholder="Search downloads...">
+              <div class="search-icon">
+                <i class="bi bi-search"></i>
+              </div>
+            </div>
+          </div>
+        </div> -->
 
        <div class="row row-cols-1 row-cols-md-3 g-4">
         <!-- Windows Downloads -->
@@ -275,7 +286,120 @@
     .dropdown-item {
       display: none;
     }
+
+    .search-box {
+      position: relative;
+      margin-bottom: 30px;
+    }
+
+    .search-box input {
+      padding: 15px 20px;
+      padding-right: 50px;
+      border-radius: 30px;
+      border: 1px solid #ddd;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      transition: all 0.3s ease;
+    }
+
+    .search-box input:focus {
+      box-shadow: 0 2px 20px rgba(52, 183, 167, 0.2);
+      border-color: #34b7a7;
+      outline: none;
+    }
+
+    .search-box .search-icon {
+      position: absolute;
+      right: 20px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: #34b7a7;
+    }
+
+    /* Add data-title attributes to your download cards */
+    .card {
+      transition: all 0.3s ease;
+    }
+
+    .card.hidden {
+      display: none;
+    }
+
+    /* Optional: Add animation for better UX */
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .card:not(.hidden) {
+      animation: fadeIn 0.5s ease forwards;
+    }
+
+    @media (max-width: 768px) {
+      .search-box {
+        margin: 0 15px 20px;
+      }
+      
+      .search-box input {
+        padding: 12px 20px;
+        font-size: 14px;
+      }
+    }
   </style>
+
+  <!-- Add this script before closing body tag -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const searchInput = document.getElementById('searchDownloads');
+      const downloadCards = document.querySelectorAll('.card');
+
+      searchInput.addEventListener('input', function() {
+        const searchTerm = this.value.toLowerCase();
+
+        downloadCards.forEach(card => {
+          const title = card.querySelector('.card-title').textContent.toLowerCase();
+          const description = card.querySelector('.card-text').textContent.toLowerCase();
+          const isVisible = 
+            title.includes(searchTerm) || 
+            description.includes(searchTerm);
+
+          // Toggle visibility with animation
+          if (isVisible) {
+            card.classList.remove('hidden');
+          } else {
+            card.classList.add('hidden');
+          }
+        });
+
+        // If no results found, show a message
+        const visibleCards = document.querySelectorAll('.card:not(.hidden)');
+        const noResultsMsg = document.getElementById('noResultsMessage');
+        
+        if (visibleCards.length === 0 && searchTerm !== '') {
+          if (!noResultsMsg) {
+            const message = document.createElement('div');
+            message.id = 'noResultsMessage';
+            message.className = 'col-12 text-center mt-4';
+            message.innerHTML = `
+              <div class="alert alert-info">
+                No downloads found matching "${searchTerm}"
+              </div>
+            `;
+            document.querySelector('.row-cols-1').appendChild(message);
+          }
+        } else if (noResultsMsg) {
+          noResultsMsg.remove();
+        }
+      });
+
+      // Optional: Clear search on ESC key
+      searchInput.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') {
+          this.value = '';
+          this.dispatchEvent(new Event('input'));
+        }
+      });
+    });
+  </script>
 
 </body>
 
