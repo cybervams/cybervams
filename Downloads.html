@@ -73,51 +73,97 @@
          
 
        <div class="row row-cols-1 row-cols-md-3 g-4">
-  <div class="col">
-    <div class="card h-100">
-      <img src="..." class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-        <a href="#" class="btn btn-pm-color btn-lg w-100">Download</a>
-      </div>
-    </div>
-  </div>
-  <div class="col">
-    <div class="card h-100">
-      <img src="..." class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">This is a short card.</p>
-        <a href="#" class="btn btn-pm-color btn-lg w-100">Download</a>
-      </div>
-    </div>
-  </div>
-  <div class="col">
-    <div class="card h-100">
-      <img src="..." class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
-        <a href="#" class="btn btn-pm-color btn-lg w-100">Download</a>
-      </div>
-    </div>
-  </div>
-  <div class="col">
-    <div class="card h-100">
-      <img src="..." class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-        <a href="#" class="btn btn-pm-color btn-lg w-100">Download</a>
-      </div>
-    </div>
-  </div>
-</div>
+        <!-- Windows Downloads -->
+        <div class="col">
+          <div class="card h-100">
+            <img src="assets/img/downloads/windows.png" class="card-img-top p-4" alt="Windows">
+            <div class="card-body">
+              <h5 class="card-title">Windows Tools</h5>
+              <p class="card-text">Essential cybersecurity and development tools for Windows users.</p>
+              <div class="btn-group w-100" role="group">
+                <a href="#" class="btn btn-primary">
+                  <i class="fas fa-download me-1"></i>x64
+                </a>
+                <a href="#" class="btn btn-primary">
+                  <i class="fas fa-download me-1"></i>x86
+                </a>
+                <a href="#" class="btn btn-primary">
+                  <i class="fas fa-download me-1"></i>ARM
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
 
+        <!-- MacOS Downloads -->
+        <div class="col">
+          <div class="card h-100">
+            <img src="assets/img/downloads/macos.png" class="card-img-top p-4" alt="MacOS">
+            <div class="card-body">
+              <h5 class="card-title">MacOS Tools</h5>
+              <p class="card-text">Specialized tools and utilities optimized for MacOS systems.</p>
+              <div class="btn-group w-100" role="group">
+                <a href="#" class="btn btn-primary">
+                  <i class="fas fa-download me-1"></i>Intel
+                </a>
+                <a href="#" class="btn btn-primary">
+                  <i class="fas fa-download me-1"></i>M1/M2
+                </a>
+                <a href="#" class="btn btn-primary">
+                  <i class="fas fa-download me-1"></i>Universal
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
 
-   
-       </div>
+        <!-- Linux Downloads -->
+        <div class="col">
+          <div class="card h-100">
+            <img src="assets/img/downloads/linux.png" class="card-img-top p-4" alt="Linux">
+            <div class="card-body">
+              <h5 class="card-title">Linux Tools</h5>
+              <p class="card-text">Open-source tools and scripts for Linux distributions.</p>
+              <div class="btn-group w-100" role="group">
+                <a href="#" class="btn btn-primary">
+                  <i class="fas fa-download me-1"></i>DEB
+                </a>
+                <a href="#" class="btn btn-primary">
+                  <i class="fas fa-download me-1"></i>RPM
+                </a>
+                <a href="#" class="btn btn-primary">
+                  <i class="fas fa-download me-1"></i>TAR
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Mobile Apps -->
+        <div class="col">
+          <div class="card h-100">
+            <img src="assets/img/downloads/mobile.png" class="card-img-top p-4" alt="Mobile">
+            <div class="card-body">
+              <h5 class="card-title">Mobile Apps</h5>
+              <p class="card-text">Security and development tools for mobile platforms.</p>
+              <div class="btn-group w-100" role="group">
+                <a href="#" class="btn btn-primary">
+                  <i class="fab fa-android me-1"></i>Android
+                </a>
+                <a href="#" class="btn btn-primary">
+                  <i class="fab fa-apple me-1"></i>iOS
+                </a>
+                <a href="#" class="btn btn-primary">
+                  <i class="fas fa-globe me-1"></i>Web
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
     </section><!-- End Portfolio Section -->
 
   </main><!-- End #main -->
@@ -149,6 +195,79 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+
+  <!-- Add this CSS to your style section -->
+  <style>
+    .card {
+      border: none;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card-img-top {
+      height: 200px;
+      object-fit: contain;
+    }
+
+    .btn-primary {
+      background-color: #34b7a7;
+      border-color: #34b7a7;
+    }
+
+    .btn-outline-primary {
+      color: #34b7a7;
+      border-color: #34b7a7;
+    }
+
+    .btn-outline-primary:hover {
+      background-color: #34b7a7;
+      border-color: #34b7a7;
+      color: white;
+    }
+
+    .download-buttons {
+      margin-top: 1rem;
+    }
+
+    .card-title {
+      color: #34b7a7;
+      font-weight: 600;
+    }
+
+    .btn-group {
+      gap: 5px;
+    }
+
+    .btn-group .btn {
+      flex: 1;
+      border-radius: 5px !important;
+      font-size: 0.9rem;
+      padding: 8px 12px;
+      background-color: #34b7a7;
+      border-color: #34b7a7;
+      transition: all 0.3s ease;
+    }
+
+    .btn-group .btn:hover {
+      background-color: #2c9d8f;
+      border-color: #2c9d8f;
+      transform: translateY(-2px);
+    }
+
+    .btn i {
+      font-size: 0.9rem;
+    }
+
+    /* Remove old dropdown styles */
+    .dropdown-menu,
+    .dropdown-item {
+      display: none;
+    }
+  </style>
 
 </body>
 
