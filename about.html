@@ -78,6 +78,55 @@
         max-width: 1400px; /* Increased container width */
       }
     }
+
+    /* Fix mobile centering */
+    @media (max-width: 400px) {
+      .team .col-lg-3 {
+        padding: 10px;
+        min-width: 100%; /* Take full width on small screens */
+      }
+
+      .profile-card {
+        margin: 10px auto; /* Center the cards */
+        max-width: 320px; /* Limit card width on small screens */
+      }
+
+      .container {
+        padding-right: 10px;
+        padding-left: 10px;
+      }
+
+      .row.justify-content-center {
+        margin-right: 0;
+        margin-left: 0;
+      }
+
+      .profile-img {
+        width: 250px; /* Slightly smaller images on mobile */
+        height: 250px;
+      }
+
+      .btn-group {
+        gap: 3px; /* Reduce gap between buttons */
+      }
+
+      .card-body {
+        padding: 15px; /* Reduce padding on mobile */
+      }
+    }
+
+    /* Additional fix for very small screens */
+    @media (max-width: 320px) {
+      .profile-card {
+        margin: 10px 5px;
+        width: calc(100% - 10px);
+      }
+
+      .profile-img {
+        width: 200px;
+        height: 200px;
+      }
+    }
   </style>
 </head>
 
