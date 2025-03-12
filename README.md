@@ -1,37 +1,37 @@
-# 🛡️ Cybervams Community
+# 🌐 Cybervams Community
 
-Welcome to Cybervams - Your Trusted Source for Cybersecurity and Bug Bounty Insights!
+Welcome to Cybervams - Your Trusted Source for Web Development and Modern Technology Insights!
 
 ## 🌐 Visit Our Website
 [cybervams.github.io/cybervams](https://cybervams.github.io/cybervams/)
 
 ## 🚀 About Us
 
-Cybervams is a dynamic community dedicated to exploring the ever-evolving landscape of cybersecurity. With a focus on vulnerability assessment, ethical hacking, and bug bounty hunting, our mission is to share knowledge and empower others to secure their digital assets and stay ahead of emerging threats.
+Cybervams is a dynamic community dedicated to exploring the ever-evolving landscape of web development. With a focus on full-stack development, modern frameworks, and innovative solutions, our mission is to share knowledge and empower others to build better web applications and stay ahead of emerging technologies.
 
 ## 👥 Our Team
 
 - **Vamshi Krishna** - *Founder*
-  - Cybersecurity Specialist
-  - Bug Bounty Hunter
-  - Web Security Researcher
+  - Full Stack Developer
+  - Frontend Specialist
+  - Web Development Mentor
   - [GitHub](https://github.com/webtech781) | [LinkedIn](https://www.linkedin.com/in/vamsikrishna781/)
 
-- **Hemanth Kumar** - *IoT & Hardware Specialist*
-  - IoT Security Expert
-  - Hardware Penetration Tester
+- **Hemanth Kumar** - *Frontend Specialist*
+  - UI/UX Expert
+  - Frontend Development
   - YouTube Content Creator
   - [GitHub](https://github.com/hemanthleo) | [YouTube](https://www.youtube.com/@HemanthLeo)
 
 - **Uma Chandrika** - *Full Stack Developer*
-  - Web Application Security
+  - Frontend & Backend Development
   - Database Management
-  - Full Stack Development
+  - API Development
   - Python & Java Expert
 
-- **Bammidi Shiva Kumar** - *Cybersecurity Specialist*
-  - Cyber Security Researcher
+- **Bammidi Shiva Kumar** - *Frontend Developer*
   - UI/UX Designer
+  - React Developer
   - Python Developer
   - [GitHub](https://github.com/Bammidishivakumar)
 
@@ -39,11 +39,11 @@ Cybervams is a dynamic community dedicated to exploring the ever-evolving landsc
   - Python Expert
   - Web Development
   - C++ Programming
-  - Security Tools Development
+  - Modern Framework Specialist
 
 - **Nitish Kumar** - *Software Developer*
   - Multi-language Developer
-  - Security Tool Development
+  - Backend Development
   - System Architecture
   - Performance Optimization
 
@@ -51,11 +51,11 @@ Cybervams is a dynamic community dedicated to exploring the ever-evolving landsc
 
 Our community provides various resources and tools:
 
-- **Security Tools**
-  - Vulnerability Assessment Tools
-  - Penetration Testing Frameworks
-  - Security Scanners
-  - Custom Security Scripts
+- **Development Tools**
+  - Frontend Frameworks
+  - Backend Solutions
+  - Development Tools
+  - Custom Web Components
 
 - **Learning Materials**
   - Tutorial Videos
@@ -71,23 +71,23 @@ Our community provides various resources and tools:
 
 ## 🎯 Our Focus Areas
 
-1. **Vulnerability Assessment**
-   - Web Application Security
-   - Network Security
-   - Mobile App Security
-   - IoT Security
+1. **Frontend Development**
+   - React/Angular/Vue
+   - Responsive Design
+   - Progressive Web Apps
+   - Modern CSS/SASS
 
-2. **Ethical Hacking**
-   - Penetration Testing
-   - Security Auditing
-   - Risk Assessment
-   - Compliance Testing
+2. **Backend Development**
+   - Node.js/Python/Java
+   - Database Design
+   - API Development
+   - Server Architecture
 
-3. **Bug Bounty Hunting**
-   - Responsible Disclosure
-   - Security Research
-   - Bug Report Writing
-   - Program Guidelines
+3. **Full Stack Development**
+   - Modern Stack Implementation
+   - DevOps Practices
+   - Performance Optimization
+   - Best Practices
 
 ## 🤝 Contributing
 
